@@ -7,7 +7,9 @@ import { FaMapLocationDot, FaShop  } from "react-icons/fa6";
 import { useEffect, useState,useRef} from "react";
 import HotSelling from "@/components/HotSelling";
 import TopDeveloper from "@/components/TopDevelopers";
-
+import EverythingYouNeed from "@/components/EverythingYouNeed";
+import IndiaLargestRealState from "@/components/IndiaLargestRealEstate";
+import CardList from "@/components/CardList";
 export default function Home() {
   const [value,setValue] = useState("");
   const countRef = useRef(1);
@@ -63,9 +65,10 @@ export default function Home() {
         ))}
       </div>
   </div>
-
       <HotSelling/>
+      <EverythingYouNeed/>
       <TopDeveloper/>
+      <IndiaLargestRealState/>
     </div>
   );
 }

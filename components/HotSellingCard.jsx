@@ -1,9 +1,14 @@
 import React from "react";
 import Image from "next/image";
-
-function HotSellingCard({ imageSrc, title, location, price }) {
+import { useRouter } from "next/navigation";
+function HotSellingCard({ slug,imageSrc, title, location, price }) {
+  const router = useRouter();
+  function handleClick() {
+    router.push(`/${slug}`);
+  }
   return (
-    <div className="w-[260px] h-[275px] rounded-lg shadow-lg overflow-hidden border border-gray-200 bg-white cursor-pointer">
+    <div className="w-[260px] h-[275px] rounded-lg shadow-lg overflow-hidden border border-gray-200 bg-white cursor-pointer mb-3"
+     onClick={handleClick}>
       {/* Image section (65% height) */}
       <div className="h-[65%] relative transform transition-transform duration-300 hover:scale-105">
         <Image

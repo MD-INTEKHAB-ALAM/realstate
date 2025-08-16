@@ -21,6 +21,7 @@ function HotSelling() {
           {HotsellingData.map((item, index) => (
             <HotSellingCard
               key={index}
+              slug={item.slug}
               title={item.title}
               location={item.location}
               price={item.price}

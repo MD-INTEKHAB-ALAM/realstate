@@ -17,7 +17,7 @@ function Header() {
     }
     return (
         <div className="flex justify-between bg-black min-h-[35px] sticky top-0 z-50">
-            <div className="w-[305px] h-[45px] my-auto ml-10 overflow-hidden" onClick={handleClick}>
+            <div className="w-[305px] h-[45px] my-auto ml-10 overflow-hidden cursor-pointer" onClick={handleClick}>
                 <Image className="w-[50px] h-[50px] text-white" src={Logo} alt="Logo" width={205} height={65} />
             </div>
             <div className="flex flex-row">
