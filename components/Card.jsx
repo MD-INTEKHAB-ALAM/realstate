@@ -13,14 +13,14 @@ function Card({
   units,
 }) {
   return (
-    <div className="flex border rounded-2xl shadow-sm bg-white overflow-hidden">
+    <div className="flex flex-col md:flex-row border rounded-2xl shadow-sm bg-white overflow-hidden">
       {/* Left: Image */}
-      <div className="relative w-64 h-56 flex-shrink-0">
+      <div className="relative w-full h-56 md:w-64 md:h-56 flex-shrink-0">
         <Image
           src={images}
           alt={title}
           fill
-          className="object-cover rounded-l-2xl"
+          className="object-cover md:rounded-l-2xl rounded-t-2xl"
         />
         {/* Overlay buttons */}
         <div className="absolute top-2 left-2 flex gap-2">
@@ -38,7 +38,7 @@ function Card({
         {/* Top Row */}
         <div className="flex justify-between items-start">
           <div>
-            <div className="flex gap-2 mb-1">
+            <div className="flex flex-wrap gap-2 mb-1">
               {badges.map((b, i) => (
                 <span
                   key={i}
@@ -54,21 +54,12 @@ function Card({
             <p className="text-purple-700 font-semibold mt-1">{priceRange}</p>
             <p className="text-sm text-gray-500 line-clamp-2">{description}</p>
           </div>
-          {logo && (
-            <Image
-              src={logo}
-              alt="developer logo"
-              width={60}
-              height={60}
-              className="object-contain"
-            />
-          )}
         </div>
 
         {/* Units */}
         <div className="mt-3 border rounded-lg overflow-hidden">
           <div className="grid grid-cols-3 bg-gray-100 text-sm font-medium p-2 text-black">
-            <span c>Unit</span>
+            <span>Unit</span>
             <span>Size</span>
             <span>Price</span>
           </div>
@@ -85,7 +76,7 @@ function Card({
         </div>
 
         {/* Action Buttons */}
-        <div className="flex gap-3 mt-4">
+        <div className="flex flex-col sm:flex-row gap-3 mt-4">
           <button className="flex-1 border border-green-600 text-green-600 py-2 rounded-lg font-medium">
             Whatsapp
           </button>

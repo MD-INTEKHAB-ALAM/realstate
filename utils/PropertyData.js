@@ -16,7 +16,6 @@ const propertyData = [
       { label: "RERA Registered", color: "#22c55e" },
       { label: "Ready to Move", color: "#fca5a5" },
     ],
-    logo: "/brigade-logo.png",
     units: [
       {
         type: "2 BHK 678 Sq. Ft. Apartment",
@@ -44,7 +43,6 @@ const propertyData = [
     description:
       "Prestige Eden Park offers luxury apartments with modern amenities and prime connectivity.",
     badges: [{ label: "Under Construction", color: "#facc15" }],
-    logo: "/prestige-logo.png",
     units: [
       {
         type: "1 BHK 550 Sq. Ft. Apartment",
@@ -70,7 +68,6 @@ const propertyData = [
       { label: "RERA Registered", color: "#22c55e" },
       { label: "Possession Soon", color: "#38bdf8" },
     ],
-    logo: "/sobha-logo.png",
     units: [
       {
         type: "1 BHK 480 Sq. Ft. Apartment",
