@@ -8,8 +8,8 @@ function Header() {
     const router = useRouter();
     const NavLinks = [
         {id:0, label:"About Us",href : "/about"},
-        {id:1, label:"Services",href : "/services"},
-        {id:2, label:"Contact Us",href : "/contact"},
+        // {id:1, label:"Services",href : "/services"},
+        // {id:2, label:"Contact Us",href : "/contact"},
     ]
 
     function handleClick(e) {
