@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header className="bg-black sticky top-0 z-50 shadow-md">
-      <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 h-[55px]">
+      <div className="flex items-center justify-between px-4 sm:px-6 lg:px-10 h-[55px] relative">
         {/* Logo */}
         <div
           className="flex items-center cursor-pointer"
@@ -53,15 +53,15 @@ function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="text-white text-2xl md:hidden"
+          className="absolute top-4 right-4 text-white text-2xl md:hidden cursor-pointer z-20"
         >
           {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
         </button>
       </div>
 
-      {/* Mobile Dropdown */}
+      {/* Mobile Dropdown (absolute, does not shift hero) */}
       {menuOpen && (
-        <div className="md:hidden bg-black border-t border-gray-700">
+        <div className="absolute top-[55px] left-0 w-full bg-black border-t border-gray-700 md:hidden z-40">
           {NavLinks.map((link) => (
             <Link
               key={link.id}

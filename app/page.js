@@ -46,7 +46,7 @@ export default function Home() {
     {/* // Hero Section */}
     <div className="w-full">
   {/* Hero Section */}
-  <div className="w-full h-[550px] sm:h-[450px] md:h-[500px] lg:h-[550px] bg-gradient-to-tr from-yellow-950 via-gray-950 to-yellow-900  relative flex flex-col justify-center">
+  <div className="w-full h-[550px] sm:h-[450px] md:h-[500px] lg:h-[550px] bg-gradient-to-tr from-black via-teal-950 to-gray-900 relative flex flex-col justify-center">
     {/* Heading & Subtext */}
       <div className="mx-auto w-full absolute top-0 mt-20 sm:mt-12 md:mt-36 px-4">
         <h1 className="text-center text-3xl sm:text-3xl md:text-4xl font-bold text-white">

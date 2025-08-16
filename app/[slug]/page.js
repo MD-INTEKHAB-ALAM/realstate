@@ -7,7 +7,7 @@ export default function SlugPage({ params }) {
   const { slug } = params; // ✅ params is already available
 
   // If URL is /property → show CardList
-  if (slug === "property") {  // ❗ don't include "/" here
+  if (slug === "property") {
     return <CardList />;
   }
 
